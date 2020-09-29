@@ -1,5 +1,8 @@
 # Table of contents
 
 * [SVG](README.md)
-* [Introduction](introduction.md)
+* [viewport](viewport.md)
+* [viewBox](viewbox.md)
+* [preserveAspectRatio](preserveaspectratio.md)
+* [Shapes](shapes.md)
 

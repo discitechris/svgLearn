@@ -1,36 +1,28 @@
 # SVG
 
+SVG images are scalable, which in an age of increasingly varied viewport sizes is a huge boon to development. With SVG we have one graphic to rule them all that scales to all devices, and therefore can save us from subsequent HTTP requests. Even the newer CSS properties such as srcset and picture require different images to be cut for different viewports, but SVG avoids all of that extra work.‌
 
+Vector \(rather than raster\) means that, because they are drawn with math, SVGs tend to have greater performance and smaller file sizes.‌
 
-```markup
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-x="0px" y="0px" width="450px" height="100px" viewBox="0 0 450 100">
- <rect x="10" y="5" fill="white" stroke="black" width="90" height="90"/>
- <circle fill="white" stroke="black" cx="170" cy="50" r="45"/>
- <polygon fill="white" stroke="black" points="279,5 294,35 328,40 303,62 309,94 
-279,79 248,94 254,62 230,39 263,35 "/>
- <line fill="none" stroke="black" x1="410" y1="95" x2="440" y2="6"/>
- <line fill="none" stroke="black" x1="360" y1="6" x2="360" y2="95"/>
-</svg>
-```
+SVG is an XML file format, and we can use it to succinctly describe shapes, lines, and text while still offering a navigable DOM; this means it can be performant and accessible.‌
 
-SVG looks like a graph paper with infinite defining things with x and y co-ordinates
+* In a **vector graphics system**, an image is described as a series of geometric shapes. Rather than receiving a finished set of pixels, a vector viewing program receives commands to draw shapes at specified sets of coordinates.
+* Vector graphics can be scaled without loss of image quality.
 
-x = "0px" and y ="0px"\(redundant since they start 0 , we don't need them\) x/y defines the x/y coordinate of the upper left corner of its viewport.
+## viewBox <a id="viewbox"></a>
 
-width/height defines the horizontal/vertical length for the rendering area of the SVG viewport.
+The SVG **`viewBox`** is a very powerful attribute, as it allows the SVG canvas to truly be infinite, while controlling and refining the viewable space.‌
 
-The viewBox attribute defines the position and dimension, in user space, of an SVG viewport.
+parameters: value are as follows: **`x`**, **`y`**, **`width`**, and **`height`**.​‌
 
-The value of the viewBox attribute is a list of four numbers: min-x, min-y, width and height. The numbers separated by whitespace and/or a comma, which specify a rectangle in user space which is mapped to the bounds of the viewport established for the associated SVG element
+![](https://gblobscdn.gitbook.com/assets%2F-MEU8LPP7CCL0cHMso72%2F-MHoH_RvR8zHRZZ94x0c%2F-MHoJTr575g_KFHOcIWi%2Fviewbox-1.jpg?alt=media&token=97bea519-1ab3-43b7-a0ad-57b4e586ba02)
 
-rect places itself with x and y from upper-left corner circle x and y always reference the center point of the circle. polygon is clockwise direction with starting x/y point from upper left corner with unlimited x/y points in between and always tries to connect the endpoint to starting point. line is based on x1/x2 y1/y2 cordinates where x1/y1=starting point x2/y2=ending point
+* SVG also stores information outside the viewBox area. If we move a shape outside this space
+* The **white area** is what the **viewer sees**, while the white and **gray area** together **hold the information** that the **SVG actually contains**.
 
-### Viewbox
+​​
 
-if width/height of changed the graph becomes smaller/larger in respect to the viewbox
+![](https://gblobscdn.gitbook.com/assets%2F-MEU8LPP7CCL0cHMso72%2F-MHoH_RvR8zHRZZ94x0c%2F-MHoJrStAzI-xdIBTsl0%2Fviewbox-2.jpg?alt=media&token=c261fb93-7ac5-4dfe-b6bb-91c705e3cbec)
 
-### check images
-
-if the svg element
+​
 
