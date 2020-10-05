@@ -5,4 +5,6 @@
 * [viewBox](viewbox.md)
 * [preserveAspectRatio](preserveaspectratio.md)
 * [Shapes](shapes.md)
+* [Group](group.md)
+* [Illustrator Optimization](illustrator-optimization.md)
 

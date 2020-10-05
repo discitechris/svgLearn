@@ -21,6 +21,7 @@ We define the **size** of this viewport with the **`width`** and **`height`** at
 * The viewer sets up a coordinate system where the horizontal, or **x-coordinate**, **increases** as you go **to the right**
 * the vertical, or **y-coordinate**, **increases** as you move **vertically downward**.
 * The upper-left corner of the viewport is defined to have an x- and y-coordinate of 0. This point, written as \(0,0\), is also called the **origin**.
+* The **default behavior** of an SVG with **width and height removed** and a viewBox declared is **to scale to the maximum parameters of the containing element**, which may be the body, a div, or just about anything else.
 
 Example,
 
