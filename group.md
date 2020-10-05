@@ -26,7 +26,7 @@
 * **CAPITAL** letters specify an **absolute coordinate**
 * **lowercase** establishes a **relative coordinate**.
 
-| Letter | Meaning | image, where applicable |
+| Letter | **Meaning** | image, where applicable |
 | :--- | :--- | :--- |
 | **`M`**, **`m`** | moveTo | start of the path |
 | **`L`**, **`l`** | lineTo | ![](.gitbook/assets/ll.png)  |
